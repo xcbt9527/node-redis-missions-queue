@@ -7,7 +7,7 @@ mqClient_1.default.on('connect', () => {
 });
 mqClient_1.default.on('ready', async () => {
     console.log('Redis is ready!');
-    await tasksHandler_1.default();
+    await (0, tasksHandler_1.default)();
 });
 mqClient_1.default.on('error', (e) => {
     console.log('Redis error! ' + e);
